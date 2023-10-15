@@ -1,39 +1,51 @@
-/* font-family: 'Playfair Display', serif;
-font-family: 'Poppins', sans-serif; */
 :root {
   --branding-color: #f4bdb8;
   --secondary-color: rgba(244, 189, 184, 0.3);
   --heading-font-family: "Playfair Display", serif;
   --body-font-family: "Poppins", sans-serif;
 }
-h2 {
-  font-family: var(--body-font-family);
-  font-weight: bold;
-  font-size: 24px;
-  margin-top: 80px;
-}
+
+/* General Styles */
 h1 {
   font-family: var(--heading-font-family);
+}
+
+h2,
+p,
+a {
+  font-family: var(--body-font-family);
+}
+
+h1 {
   font-weight: bold;
   font-size: 45px;
   line-height: 55px;
   margin-top: 20px;
   margin-bottom: 15px;
 }
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 80px;
+}
+
+.hero {
+  margin-top: 100px;
+}
+
+/* Hero Section */
 .hero h1,
 .hero h2,
 .hero p,
 .hero a {
   margin-left: 70px;
 }
+
 .hero p {
   margin-bottom: 120px;
 }
-.hero p,
-a {
-  font-family: var(--body-font-family);
-  font-size: 18px;
-}
+
 .hero img {
   border-radius: 30px;
   width: 560px;
@@ -41,6 +53,7 @@ a {
   object-fit: cover;
 }
 
+/* Button Styles */
 .btn-main {
   border: 1px solid var(--branding-color);
   border-radius: 4px;
@@ -50,58 +63,123 @@ a {
   padding: 18px 40px;
 }
 
-.hero {
-  margin-top: 100px;
-}
-.contact {
-  border: 0px solid var(--secondary-color);
+/* Contact Section */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--secondary-color);
+  border: 0px solid var(--secondary-color);
   border-radius: 20px;
   padding: 50px 40px;
 }
 
-footer {
-  border: 0px solid var(--secondary-color);
-  background-color: var(--secondary-color);
-  border-radius: 20px;
-  padding: 50px 40px;
-}
-.fa-brands {
-  border: 2px solid black;
-  border-radius: 50%;
-  padding: 10px;
-  margin: 5px;
-}
-.contact h4 {
-  font-family: var(--heading-font-family);
-  font-size: 32px;
-}
-.contact p {
+footer .copyright-notice {
   font-family: var(--body-font-family);
-  font-size: 18px;
+  color: var(--branding-color);
+  text-align: center;
+  margin: 0;
 }
+
+.contact,
 .my-portfolio {
   border: 0px solid var(--secondary-color);
   background-color: var(--secondary-color);
   border-radius: 20px;
   padding: 50px 40px;
 }
-.box-1 {
-  width: 437px; /* Set the width of the container */
-  height: 581px; /* Set the height of the container */
-  background-color: var(
-    --branding-color
-  ); /* Set the background color of the container */
-  position: relative; /* Set the position of the container to relative */
-  border-radius: 30px;
+
+.fa-brands {
+  color: var(--branding-color);
+  border: 0px solid var(--secondary-color);
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  margin: 5px;
 }
+
+.contact h4 {
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+}
+
+.contact p,
+.my-portfolio p {
+  font-size: 18px;
+}
+.my-portfolio h3,
+p {
+  margin: 0 79.5px 20px;
+}
+
+.my-portfolio h3 {
+  font-family: var(--heading-font-family);
+  font-size: 64px;
+}
+
+.my-portfolio a {
+  margin-left: 90px;
+  padding: 15px 60px;
+}
+/* Portfolio Section */
+
+.box-1 {
+  width: 437px;
+  height: 581px;
+  background-color: var(--branding-color);
+  position: relative;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
 .box-2,
 .box-3 {
-  width: 437px; /* Set the width of the container */
-  height: 294px; /* Set the height of the container */
-  background-color: var(
-    --branding-color
-  ); /* Set the background color of the container */
-  position: relative; /* Set the position of the container to relative */
+  width: 437px;
+  height: 294px;
+  background-color: var(--branding-color);
+  position: relative;
   border-radius: 30px;
+  margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 992px) {
+  .hero h1,
+  .hero h2,
+  .hero p,
+  .hero a {
+    margin-left: 0;
+  }
+  .hero p {
+    margin-bottom: 50px;
+  }
+  .hero h2 {
+    margin-top: 50px;
+  }
+  .box-2,
+  .box-3 {
+    display: none;
+  }
+  .my-portfolio a {
+    display: block;
+    margin: 10px auto;
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .btn-main {
+    padding: 14px 32px;
+  }
+  footer {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  footer .copyright-notice {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 543px) {
 }
