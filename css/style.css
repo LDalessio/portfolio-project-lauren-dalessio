@@ -106,7 +106,7 @@ footer .copyright-notice {
 
 .contact p,
 .my-portfolio p {
-  font-size: 18px;
+  font-size: 16px;
 }
 .my-portfolio h3,
 p {
@@ -115,7 +115,7 @@ p {
 
 .my-portfolio h3 {
   font-family: var(--heading-font-family);
-  font-size: 64px;
+  font-size: 45px;
 }
 
 .my-portfolio a {
@@ -144,6 +144,15 @@ p {
 }
 
 /* Responsive Adjustments */
+@media (max-width: 1400px) {
+  .my-portfolio h3 {
+    font-size: 50px;
+  }
+
+  .box-2 {
+    margin-top: 15px;
+  }
+}
 
 @media (max-width: 992px) {
   .hero h1,
