@@ -32,7 +32,8 @@ h2 {
 
 .hero,
 .about-section,
-.work-section {
+.work-section,
+.contact-section {
   margin-top: 100px;
 }
 
@@ -124,6 +125,10 @@ p {
   margin-left: 90px;
   padding: 15px 60px;
 }
+.contact-section p,
+.contact-section h4 {
+  margin-left: 40px;
+}
 /* Portfolio Section */
 
 .box-1 {
@@ -180,6 +185,11 @@ p {
 }
 .work-section p {
   font-size: 14px;
+}
+/* Contact Page */
+.contact-page {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Responsive Adjustments */
