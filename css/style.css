@@ -31,7 +31,8 @@ h2 {
 }
 
 .hero,
-.about-section {
+.about-section,
+.work-section {
   margin-top: 100px;
 }
 
@@ -166,6 +167,20 @@ h2 {
   height: 560px;
   object-fit: cover;
 }
+/* Work Page */
+.work-section h3,
+p {
+  font-family: var(--body-font-family);
+}
+.work-section h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 20px 0 0;
+}
+.work-section p {
+  font-size: 14px;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 1400px) {
@@ -221,7 +236,5 @@ h2 {
   .about-section img {
     margin-top: 40px;
     max-width: 80%;
-  }
-  .certifications img {
   }
 }
