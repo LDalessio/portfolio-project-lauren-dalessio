@@ -30,7 +30,8 @@ h2 {
   margin-top: 80px;
 }
 
-.hero {
+.hero,
+.about-section {
   margin-top: 100px;
 }
 
@@ -142,6 +143,29 @@ p {
   border-radius: 30px;
   margin: 0 auto;
 }
+/* About Page */
+.about-section h3,
+h2 {
+  font-size: 18px;
+}
+.about-section h2 {
+  margin: 40px 0 20px 0;
+}
+.about-section h3 {
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+.certifications h4 {
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  text-align: center;
+}
+.about-section img {
+  border-radius: 30px;
+  width: 560px;
+  height: 560px;
+  object-fit: cover;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 1400px) {
@@ -190,5 +214,14 @@ p {
     margin-top: 10px;
   }
 }
-@media (max-width: 543px) {
+@media (max-width: 576px) {
+  .about-section {
+    text-align: center;
+  }
+  .about-section img {
+    margin-top: 40px;
+    max-width: 80%;
+  }
+  .certifications img {
+  }
 }
