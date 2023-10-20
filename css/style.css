@@ -186,10 +186,21 @@ p {
 .work-section p {
   font-size: 14px;
 }
-/* Contact Page */
-.contact-page {
-  display: flex;
-  justify-content: flex-end;
+/* Pre Footer Section */
+.pre-footer li {
+  display: inline;
+  list-style: none;
+  line-height: 45px;
+  margin-left: 15px;
+}
+.pre-footer a {
+  text-decoration: none;
+  color: black;
+  transition: all 100ms ease-in-out;
+}
+.pre-footer a:hover,
+.pre-footer li.active a {
+  color: var(--branding-color);
 }
 
 /* Responsive Adjustments */
@@ -246,5 +257,7 @@ p {
   .about-section img {
     margin-top: 40px;
     max-width: 80%;
+  }
+  .pre-footer ul {
   }
 }
