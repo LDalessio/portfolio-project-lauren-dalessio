@@ -32,6 +32,40 @@
     <title>Front-end Developer | Lauren D'Alessio</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container mt-3">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container">
       <div class="row hero">
         <div class="col-sm-6">
@@ -50,13 +84,15 @@
             in Phoenix, Arizona.
           </h1>
           <p>I design beautifully simple things.</p>
-          <a
-            href="contact.html"
-            target="_blank"
-            title="Work with me"
-            class="btn btn-main"
-            >Get started</a
-          >
+          <div class="hero-button">
+            <a
+              href="contact.html"
+              target="_blank"
+              title="Work with me"
+              class="btn btn-main"
+              >Get started</a
+            >
+          </div>
         </div>
       </div>
 
@@ -94,9 +130,14 @@
                 title="Portfolio Image 3"
               />
             </div>
-            <a href="#" target="_blank" title="Contact me" class="btn btn-main"
-              >See all</a
-            >
+            <div class="portfolio-button">
+              <a
+                href="#"
+                title="Full Portfolio"
+                class="btn btn-main portfolio-button"
+                >See all</a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -120,13 +161,13 @@
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/">About</a>
+            <a href="/about.html">About</a>
           </li>
           <li>
-            <a href="/">Work</a>
+            <a href="/work.html">Work</a>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <a href="/contact.html">Contact</a>
           </li>
         </ul>
       </section>

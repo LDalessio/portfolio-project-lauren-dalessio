@@ -203,6 +203,12 @@ p {
   color: var(--branding-color);
 }
 
+/* Nav Section */
+
+.active {
+  color: var(--branding-color) !important;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 1400px) {
   .my-portfolio h3 {
@@ -232,9 +238,19 @@ p {
     display: none;
   }
   .my-portfolio a {
-    display: block;
-    margin: 10px auto;
-    width: 30%;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  .portfolio-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .my-portfolio h3,
+  .my-portfolio p {
+    text-align: center;
+    margin: 0 0 15px 0;
   }
 }
 @media (max-width: 768px) {
@@ -249,15 +265,38 @@ p {
   footer .copyright-notice {
     margin-top: 10px;
   }
+  .pre-footer ul {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 @media (max-width: 576px) {
-  .about-section {
+  .hero-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .hero p {
+    margin: 0;
+  }
+  .about-section,
+  .hero h1,
+  .hero h2,
+  .hero p {
     text-align: center;
   }
   .about-section img {
     margin-top: 40px;
     max-width: 80%;
   }
-  .pre-footer ul {
+  .box-1 {
+    width: 334px;
+    height: 448px;
+    background-color: var(--branding-color);
+    position: relative;
+    border-radius: 30px;
+    margin: 0 auto;
   }
 }
