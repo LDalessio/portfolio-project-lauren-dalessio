@@ -321,8 +321,8 @@ p {
     max-width: 80%;
   }
   .box-1 {
-    width: 334px;
-    height: 448px;
+    width: 271px;
+    height: 365px;
     background-color: var(--branding-color);
     position: relative;
     border-radius: 30px;
@@ -351,6 +351,9 @@ p {
     width: 80%;
   }
   .work-section h1 {
+    text-align: center;
+  }
+  .contact-section h1 {
     text-align: center;
   }
 }
