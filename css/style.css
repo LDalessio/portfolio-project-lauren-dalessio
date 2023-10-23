@@ -197,6 +197,7 @@ p {
 .work-section p {
   font-size: 14px;
 }
+
 /* Pre Footer Section */
 .pre-footer li {
   display: inline;
@@ -212,6 +213,14 @@ p {
 .pre-footer a:hover,
 .pre-footer li.active a {
   color: var(--branding-color);
+}
+
+.open-sourced-link {
+  text-decoration: none;
+  color: var(--branding-color);
+}
+.open-sourced-link:hover {
+  text-decoration: underline;
 }
 
 /* Nav Section */
@@ -330,5 +339,18 @@ p {
   }
   .contact p {
     margin-bottom: 15px;
+  }
+
+  .hero,
+  .about-section,
+  .work-section,
+  .contact-section {
+    margin-top: 30px;
+  }
+  .work-section img {
+    width: 80%;
+  }
+  .work-section h1 {
+    text-align: center;
   }
 }
